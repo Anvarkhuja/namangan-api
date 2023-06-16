@@ -5,7 +5,6 @@ import cors from "cors";
 const app = express()
 
 const db = mysql.createConnection({
-    port:"3306",
     host:"sql.freedb.tech",
     user:"freedb_Anvarkhuja",
     password:"U@HY3kQTkt$@KG2",
@@ -21,7 +20,7 @@ const db = mysql.createConnection({
 app.use(express.json())
 app.use(cors())
 
-app.get("mern-app0.herokuapp.com", (req,res)=>{
+app.get("mern-app0.herokuapp.com/", (req,res)=>{
     res.json("hello backend")
 })
 //hotels
