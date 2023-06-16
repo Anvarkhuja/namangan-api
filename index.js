@@ -21,7 +21,7 @@ const db = mysql.createConnection({
 app.use(express.json())
 app.use(cors())
 
-app.get("/", (req,res)=>{
+app.get("mern-app0.herokuapp.com", (req,res)=>{
     res.json("hello backend")
 })
 //hotels
