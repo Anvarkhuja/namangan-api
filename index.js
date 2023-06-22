@@ -18,7 +18,9 @@ const db = mysql.createConnection({
 // })
 
 app.use(express.json())
-app.use(cors())
+app.use(cors({
+    origin: "https://namangan.vercel.app",
+}))
 
 app.get("/", (req,res)=>{
     res.json("hello backend")
